@@ -67,6 +67,12 @@ function rpssrb_render_callback( $atts ) {
 }
 
 /**
+ * Bonus: make the callback usable as a traditional shortcode.
+ */
+add_shortcode( 'rpssrb_random_posts', 'rpssrb_render_callback' );
+
+
+/**
  * Register scripts for the block editor.
  */
 function rpssrb_register_scripts() {
